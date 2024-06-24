@@ -1,14 +1,18 @@
 \ProvidesPackage{netvis}
 
 \RequirePackage{tikz}
+\RequirePackage{graphicx}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Setups
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usetikzlibrary{quotes,arrows.meta}
 \usetikzlibrary{positioning}
+\usetikzlibrary{3d} % for including external image
+\usetikzlibrary{decorations,shapes}
+\usetikzlibrary{decorations.shapes}
+\usetikzlibrary{decorations.markings}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\edgecolor{rgb:blue,4;red,1;green,4;black,3}
 \newcommand{\midarrow}{\tikz \draw[-Stealth,line width =0.8mm,draw=\edgecolor] (-0.3,0) -- ++(0.3,0);}
 
