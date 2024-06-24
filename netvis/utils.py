@@ -48,6 +48,10 @@ class RGB(Arguments):
         super().__init__(res)
 
 
+def to_camel_case(snake_str):
+    return "".join(x.capitalize() for x in snake_str.lower().split("_"))
+
+
 # some predefined default colors
 colors = {
     "conv": RGB(yellow=5, red=2.5, white=5),
@@ -63,7 +67,8 @@ colors = {
     "shortcut": RGB(blue=3, green=1, white=5),
     "mult": RGB(magenta=1),
     "conc": RGB(red=5),
+    "edge": RGB(blue=4, red=1, green=4, black=3)
 }
 
 if __name__ == "__main__":
-    print(RGB(10, 10, 10).dumps())
+    print(colors["conv"].dumps())

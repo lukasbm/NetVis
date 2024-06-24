@@ -13,8 +13,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\edgecolor{rgb:blue,4;red,1;green,4;black,3}
+
+% TODO: remove!
+%\def\edgecolor{rgb:blue,4;red,1;green,4;black,3}
+%\def\ConvColor{rgb:yellow,5;red,2.5;white,5}
+%\def\ConvReluColor{rgb:yellow,5;red,5;white,5}
+%\def\PoolColor{rgb:red,1;black,0.3}
+%\def\UpsampleColor{rgb:green,5; white,2}
+%\def\DetectColor{rgb:red,5; white,2}
+%\def\UnpoolColor{rgb:blue,2;green,1;black,0.3}
+%\def\FcColor{rgb:blue,5;red,2.5;white,5}
+%\def\FcReluColor{rgb:blue,5;red,5;white,4}
+%\def\SoftmaxColor{rgb:magenta,5;black,7}
+%\def\SumColor{rgb:green, 1}
+%\def\ShortcutColor{rgb: blue, 3; green, 1; white, 5}
+%\def\MultColor{rgb: magenta, 1}
+%\def\ConcColor{rgb:red, 5}
+
+% FIXME: rename edge color
 \newcommand{\midarrow}{\tikz \draw[-Stealth,line width =0.8mm,draw=\edgecolor] (-0.3,0) -- ++(0.3,0);}
+\newcommand{\copymidarrow}{\tikz \draw[-Stealth,line width=0.8mm,draw={rgb:blue,4;red,1;green,1;black,3}] (-0.3,0) -- ++ (0.3,0);}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
