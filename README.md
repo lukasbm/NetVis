@@ -14,6 +14,8 @@ This library aims to create a simple, clean and easy to use visualizer for neura
 
 ## Setup
 
+Install a full latex distribution and latexmk.
+
 Using python 3.12
 
 `pip install -r requirements.txt`
